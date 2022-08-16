@@ -1,0 +1,61 @@
+{
+  "name": "mentoring",
+  "version": "1.0.0",
+  "description": "application for find and help people to be better in any activity",
+  "main": "index.js",
+  "scripts": {
+    "dev:proyects": "set NODE_ENV=dev&& ts-node-dev --ignore-watch node_modules ./src/apps/proyects/backend/start.ts",
+    "test:features": "npm run test:proyect:backend:features",
+    "test:proyect:backend:features": "set NODE_ENV=test&&  cucumber-js -p proyects_backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.5.1",
+    "@types/bson": "^4.2.0",
+    "@types/compression": "^1.7.2",
+    "@types/errorhandler": "^1.5.0",
+    "@types/express": "^4.17.13",
+    "@types/glob": "^7.2.0",
+    "@types/helmet": "^4.0.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsdoc": "^39.3.6",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4",
+    "ts-node-dev": "^2.0.0",
+    "tslint-eslint-rules": "^5.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{src, test}/**/*.ts": [
+      "prettier --write",
+      "lint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "glob": "^8.0.3",
+    "helmet": "^5.1.1",
+    "http-status": "^1.5.2",
+    "node-dependency-injection": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "unixify": "^1.0.0"
+  }
+}
