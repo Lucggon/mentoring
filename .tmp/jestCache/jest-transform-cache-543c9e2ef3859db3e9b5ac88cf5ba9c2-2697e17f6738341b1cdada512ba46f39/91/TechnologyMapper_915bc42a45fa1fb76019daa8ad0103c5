@@ -1,0 +1,11 @@
+4fb79d977ded42875b41da8b1431373f
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TechnologyMapper = void 0;
+const TechnologyCommand_1 = require("./TechnologyCommand");
+class TechnologyMapper {
+    static toCommand(frontEnd, backEnd, dataScience) {
+        return new TechnologyCommand_1.TechnologyCommand(frontEnd, backEnd, dataScience);
+    }
+}
+exports.TechnologyMapper = TechnologyMapper;

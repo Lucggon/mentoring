@@ -13,7 +13,7 @@ Given('I send a GET request to {string}', (router: string) => {
 });
 
 Then('The response status code should be {int}', async (status: number)=>{
-    _response = await _request.expect(200);
+    _response = await _request.expect(status);
 
 });
 

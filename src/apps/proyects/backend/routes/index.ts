@@ -11,5 +11,5 @@ export async function registerRoutes(router: Router){
 async function register(routePath: string, router: Router) {
     const route: Register = require(routePath);
     await route.register(router);
-    console.log('ROUTER REGISTER')
+
 }

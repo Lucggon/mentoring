@@ -32,9 +32,9 @@ export class Server{
         router.use(errorHandler());
         server.express.use(router);
         await registerRoutes(router);
-
+        console.log(router.stack[1])
         router.use((err: Error, req: Request, res: Response, next: Function) => {
-            res.status(httpStatus.INTERNAL_SERVER_ERROR).send(err.message);
+            res.status(httpStatus.INTERNAL_SERVER_ERROR).send();
         });
         return server;
     }

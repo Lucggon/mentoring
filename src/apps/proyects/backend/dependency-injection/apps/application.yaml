@@ -3,3 +3,7 @@ services:
   Apps.proyects.controllers.StatusGetController:
     class: ../../controllers/StatusGetController
     arguments: []
+
+  Apps.proyects.controllers.ProyectPutController:
+    class: ../../controllers/ProyectPutController
+    arguments: []

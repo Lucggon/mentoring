@@ -1,0 +1,21 @@
+e015bf875886ae114cd7ac6a4635e360
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TechnologyCommand = void 0;
+class TechnologyCommand {
+    constructor(frontEnd, backEnd, dataScience) {
+        this.frontEnd = frontEnd;
+        this.backEnd = backEnd;
+        this.dataScience = dataScience;
+    }
+    getFrontEnd() {
+        return this.frontEnd;
+    }
+    getBackend() {
+        return this.backEnd;
+    }
+    getDataScience() {
+        return this.dataScience;
+    }
+}
+exports.TechnologyCommand = TechnologyCommand;

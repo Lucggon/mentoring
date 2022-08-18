@@ -1,9 +1,9 @@
 import { Request, Response, Router } from 'express';
 import container from '../dependency-injection';
-import StatusGetController from '../controllers/StatusGetController';
+import { Controller } from '../controllers/controller';
 
 export const register = async (router: Router) => {
-        const controller: StatusGetController =  (await container()).get('Apps.proyects.controllers.StatusGetController');
+        const controller: Controller =  (await container()).get('Apps.proyects.controllers.StatusGetController');
         router.get('/status', (req: Request, res: Response) => controller.run(req, res));
     };
 

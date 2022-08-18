@@ -1,0 +1,17 @@
+917b693b7813d6684a6164fd9fcf7504
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Proyect = void 0;
+class Proyect {
+    constructor(id, name, category, description, tags, tecnologies, experienceLevel, team) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.description = description;
+        this.tecnoogies = tecnologies;
+        this.tags = tags;
+        this.experienceLevel = experienceLevel;
+        this.team = team;
+    }
+}
+exports.Proyect = Proyect;
