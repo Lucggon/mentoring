@@ -1,0 +1,5 @@
+services:
+
+    Proyects.proyec.application.ProyectCreator:
+      class: src\contexts\proyects\proyect\application\ProyectCreator
+      arguments: []

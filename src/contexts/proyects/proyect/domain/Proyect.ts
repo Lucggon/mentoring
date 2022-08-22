@@ -5,20 +5,20 @@ export class Proyect{
     readonly category: string;
     readonly description: string;
     readonly tags: string[];
-    readonly tecnoogies: Technology;
+    readonly technologies: Technology;
     readonly experienceLevel: number;
     readonly team: string[];
 
 
     public constructor(id:string, name:string, category:string,
-         description:string, tags:string[], tecnologies: Technology, experienceLevel:number, team:string[] ){
+         description:string, tags:string[], technologies: Technology, experienceLevel:number, team:string[] ){
             this.id = id;
             this.name = name;
             this.category =category;
             this.description = description;
-            this.tecnoogies = tecnologies;
+            this.technologies = technologies;
             this.tags = tags;
-            this.experienceLevel =experienceLevel;
+            this.experienceLevel = experienceLevel;
             this.team = team;
          }
 

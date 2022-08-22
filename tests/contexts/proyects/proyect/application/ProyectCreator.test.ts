@@ -24,6 +24,7 @@ describe('ProyectCreator', () => {
         const experienceLevel= 1;
         const team = ['']
         const technologyCommand:TechnologyCommand =  TechnologyMapper.toCommand(technologies.frontEnd, technologies.back_end, technologies.data_science);
+      
         const expectedTechnology = new Technology(technologies.frontEnd, technologies.back_end, technologies.data_science);
         const expectedProyect = new Proyect(id, name, category, description, tags, expectedTechnology,  experienceLevel, team);
         
